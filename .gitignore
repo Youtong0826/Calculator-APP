@@ -10,7 +10,6 @@
 .local.properties
 /.idea/
 /gradle/
-/gradle copy/
 build.gradle.kts
 gradlew.bat
 gradle.properties
