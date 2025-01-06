@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/processTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/processTextView" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultTextView">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonAllClear"
+            style="@style/ButtonStyle"
+            android:background="@drawable/lightgray_button_background"
+            android:text="AC" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonToggleSign"
+            style="@style/ButtonStyle"
+            android:background="@drawable/lightgray_button_background"
+            android:text="+/-" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonDivide"
+            style="@style/ButtonStyle"
+            android:background="@drawable/lightgray_button_background"
+            android:text="/" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonBackspace"
+            style="@style/ButtonStyle"
+            android:background="@drawable/orange_button_background"
+            android:text="⌫" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button7"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="7" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button8"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="8" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button9"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="9" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonMultiply"
+            style="@style/ButtonStyle"
+            android:background="@drawable/orange_button_background"
+            android:text="*" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button4"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="4" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button5"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="5" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button6"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="6" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonMinus"
+            style="@style/ButtonStyle"
+            android:background="@drawable/orange_button_background"
+            android:text="-" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button1"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="1" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button2"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="2" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button3"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="3" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonPlus"
+            style="@style/ButtonStyle"
+            android:background="@drawable/orange_button_background"
+            android:text="+" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Button0"
+            style="@style/ButtonStyle"
+            android:background="@drawable/zero_button_background"
+            android:text="0"
+            android:layout_columnSpan="2"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonDot"
+            style="@style/ButtonStyle"
+            android:background="@drawable/darkgray_button_background"
+            android:text="." />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonEquls"
+            style="@style/ButtonStyle"
+            android:background="@drawable/orange_button_background"
+            android:text="=" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
