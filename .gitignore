@@ -13,6 +13,6 @@
 #un use file
 
 build.gradle.kts
-gradle.bat
+gradlew.bat
 gradle.properties
 settings.gradle.kts
